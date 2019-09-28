@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1>Приложение</h1>
+<!--    <div>Меню (на разработке)</div>-->
+</header>
+
+<div class='backgr'>
+{% block content %}
+{% endblock content%}
+</div>
+
+</body>
+</html>

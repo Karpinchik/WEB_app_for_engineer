@@ -1,0 +1,17 @@
+{% extends 'app_to/index.html' %}
+
+{% block content %}
+    <h2>Список:</h2>
+    <main>
+        <ol>
+        {% for i in data %}
+            <li>
+                <a href="{% url 'list_objects' pk=i.pk %}?item={{ i.pk }}"> {{ i.name }} </a>
+                <br/>
+            </li>
+        {% endfor %}
+        </ol>
+    </main>
+{% endblock content %}
+
+

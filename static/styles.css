@@ -1,0 +1,58 @@
+
+header {
+    background: #A9A9A9;
+
+    padding: 40px;
+}
+
+.backgr {
+
+    background: #F5F5F5;
+    height: 100%;
+    background-position: local ;
+    padding-left: 40px;
+    padding-top: 40px;
+    min-height: 100vh;
+}
+
+ol {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+
+}
+a {
+    color: black;
+}
+
+
+
+
+
+.hide {
+    display: none;
+}
+.hide + label ~ div{
+    display: none;
+}
+
+.hide + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px;
+}
